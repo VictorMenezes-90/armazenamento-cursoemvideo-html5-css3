@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semântica e Formatações</title>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <!-- Indicador Padrão -->
+        <div style="display: flex; margin: 0; padding: 0; width: 100%; height: fit-content; background-color:rgb(0, 0, 255); align-items: center; justify-content: center; gap: 1.5vw;">
+                <a href="" style="margin: 0; padding: 0; margin: 0; font-size: 1.25rem; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white; text-align: center; align-self: center; text-decoration: none;">M01</a>
+                <a href="" style="margin: 0; padding: 0; margin: 0; font-size: 1.25rem; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white; text-align: center; align-self: center; text-decoration: none;">C08 |</a>
+                <a href="" style="margin: 0; padding: 0; margin: 0; font-size: 1.25rem; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white; text-align: center; align-self: center; text-decoration: none;">Aulas 01, 02, 03 e 04</a>
+            </p>
+        </div>
+        
+        <div style="margin-right: 10px; margin-left: 10px;">
+            <!-- Exercício 009 -->
+            <h1>Semântica</h1>
+            <p>O HTML5 foca agora em SEMÂNTICA, ou seja, a utilização de elementos que denotam seu significado e função no conteúdo.
+            <br><br>
+            O CSS3 foca em FORMATAÇÃO, ou seja, a utilização de elementos que denotam seu significado e função na apresentação do conteúdo. Tags como &lt;center&gt; e &lt;marquee&gt; são obsoletas, pois não possuem significado semântico e não são recomendadas para formatação de conteúdo. O ideal é utilizar sempre as CSS para estilizar o conteúdo, mantendo a semântica no HTML.
+            </p>
+
+            <h1>Principais Formatações</h1>
+                <h2>Destaque e Negrito</h2>
+                <p>O elemento &lt;strong&gt; é utilizado para indicar que o conteúdo é de extrema importância, enquanto o elemento &lt;b&gt; é utilizado para indicar que o conteúdo deve ser destacado visualmente, mas não possui significado semântico. O ideal é utilizar o elemento &lt;strong&gt; para indicar importância e o elemento &lt;b&gt; para destacar visualmente.
+                <br><br>
+                Este texto está em <strong>strong</strong> &rarr; Dá sentido SEMÂNTICO para o termo.
+                <br>
+                Este texto está em <b>bold</b> &rarr; Dá destaque VISUAL para o termo.
+                </p>
+                <h2>Ênfase e Itálico</h2>
+                <p>O elemento &lt;em&gt; é utilizado para indicar que o conteúdo é de extrema importância, enquanto o elemento &lt;i&gt; é utilizado para indicar que o conteúdo deve ser destacado visualmente, mas não possui significado semântico. O ideal é utilizar o elemento &lt;em&gt; para indicar importância e o elemento &lt;i&gt; para destacar visualmente.
+                <br><br>
+                Este texto está em <em>emphasis</em> &rarr; Dá sentido SEMÂNTICO para o termo.
+                <br>
+                Este texto está em <i>italic</i> &rarr; Dá destaque VISUAL para o termo.
+                </p>
+                <h2>Outras Formatações</h2>
+                    <h3>Texto marcado</h3>
+                    <p>O elemento &lt;mark&gt; é utilizado para indicar que o conteúdo deve ser <mark>marcado ou destacado</mark>, geralmente para fins de destaque visual em um contexto específico.</p>
+                    <h3>Textos com tamanho</h3>
+                    <p>Estamos agora criando um <big>texto grande</big> e <small>outro texto, só que pequeno</small>
+                    <br>
+                    <small><em>*A Tag BIG é uma daquelas obsoletas pois não tem sentido semântico</em></small></p>
+                    <h3>Texto Deletado</h3>
+                    <p>O elemento &lt;del&gt; é utilizado para indicar que o conteúdo foi excluído ou removido.</p>
+                    <h3>Texto inserido e sublinhado</h3>
+                    <p>Podemos marcar que um texto foi <ins>inserido</ins> com a tag &lt;ins&gt; e <u>sublinhado</u> com a tag &lt;u&gt;.</p>
+                    <h3>Textos Sobre e Subescritos</h3>
+                    <p>Com a tag &lt;sup&gt; podemos criar textos sobreescritos como x<sup>2</sup> e com a tag &lt;sub&gt; textos subescritos como H<sub>2</sub>O.</p>
+
+
+            <br><br>
+                <h1>Código-fonte</h1>
+                <p>O elemento &lt;code&gt; é utilizado para indicar que o conteúdo é um trecho de código-fonte, geralmente exibido em uma fonte monoespaçada: <code>document.getElementById('teste')</code>
+                usando a tag &lt;pre&gt; aparecem também as endentações do código:
+                <pre>
+                    <code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR.')
+    else:
+        print(f'O número {num} é ÍMPAR.')
+    print('Fim do programa.')
+                    </code>
+                </pre>
+                </p>
+
+                <h1>Citações</h1>
+                <p>Utilizando a tag &lt;q&gt; podemos criar citações com significado semântico:</p>
+                Como diria meu amigo: <q>Um computador é um burro muito rápido!</q>
+                <h2>Citações Completas (De Bloco)</h2>
+                <blockquote cite="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/08%20-%20Formata%C3%A7%C3%A3o%20de%20Textos.pdf">
+                    Este é um exemplo de citação completa (de bloco), que é utilizada para destacar trechos de texto que são citados de outras fontes com a tag &lt;blockquote&gt;.
+                </blockquote>
+                <h2>Abreviações</h2>
+                <p>Podemos utilizar a tag &lt;abbr&gt; para criar abreviações. No exemplo, se eu digitar HTML o significado dele será HyperText Markup Language que é o significado completo (Ele é exibido quando o usuário passa o mouse sobre a abreviação).</p>
+                <p><abbr title="HyperText Markup Language">HTML</abbr> é a linguagem de marcação utilizada para criar páginas web.</p>
+                <h2>Texto invertido</h2>
+                <p>Uma das tags menos utilizadas, porém existe! &lt;bdo&gt; com o atributo <abbr title="Direction">dir</abbr> que funciona <bdo dir="rtl">Desse jeitinho aqui!</bdo></p>
+        </div>
+    </body>
+</html>
