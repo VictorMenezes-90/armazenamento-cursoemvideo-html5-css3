@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imagens Dinâmicas</title>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <div style="margin: 0; padding: 0; width: 100%; height: fit-content; background-color:rgb(0, 0, 255); font-size: 1.25rem; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white; text-align: center;"> Módulo 01 | Capítulo 11 | Exercício 11
+        </div>
+        
+        <div style="margin-right: 10px; margin-left: 10px;">
+            <!-- Exercício 011 -->
+            <h1>Imagens Dinâmicas</h1>
+            <p>Tente abrir este site de vários dispositivos diferentes ou aumente/diminua o tamanho da janela do seu navegador.</p>
+
+            Podemos colocar a grande como base:
+            <br>
+            <picture>
+                <source media="(max-width: 750px)" srcset="../multimidia/imagens/e11-foto-p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="../multimidia/imagens/e11-foto-m.png" type="image/png">
+                <img src="../multimidia/imagens/e11-foto-g.png" alt="Imagem Flexível">
+            </picture>
+            <br>
+            Ou então podemos colocar a pequena como base (aí inverte-se max-width &rarr; min-width):
+            <br>
+            <picture>
+                <source media="(min-width: 1050px)" srcset="../multimidia/imagens/e11-foto-g.png" type="image/png">
+                <source media="(min-width: 750px)" srcset="../multimidia/imagens/e11-foto-m.png" type="image/png">
+                <img src="../multimidia/imagens/e11-foto-p.png" alt="Imagem Flexível">
+            </picture>
+            <br>
+            Ambas, se configuradas corretamente, funcionam da mesma forma.
+
+
+            <h1>Reproduzindo Áudio</h1>
+            <audio controls preload="metadata">
+                <source src="../multimidia/audios/e11-happy-mistake.mp3" type="audio/mpeg">
+                <source src="../multimidia/audios/e11-happy-mistake.ogg" type="audio/ogg">
+                <source src="../multimidia/audios/e11-happy-mistake.wav" type="audio/wav">
+                <p>Seu navegador não suporta a reprodução deste audio. Clique <a href="../multimidia/audios/e11-happy-mistake.mp3" download>aqui</a> para baixar o arquivo.</p>
+            </audio>
+
+            <audio controls preload="metadata">
+                <source src="../multimidia/audios/e11-guanacast.mp3" type="audio/mpeg">
+                <p>Seu navegador não suporta a reprodução deste audio. Clique <a href="../multimidia/audios/e11-guanacast.mp3" download="e11-guanacast.mp3" type="audio/mpeg">aqui</a> para baixar o arquivo.</p>
+            </audio>
+        </div>
+    </body>
+</html>
