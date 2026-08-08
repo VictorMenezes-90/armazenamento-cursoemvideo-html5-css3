@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Outras Fontes</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+            /*
+            font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;*/
+
+            @font-face{
+                font-family: 'Love Larry';
+                src: url('love larry ttf.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            *{
+                font-family: "Space Grotesk", sans-serif;
+            }
+
+            code{
+                color: rgb(255,0,0);
+            }
+
+            .FonteLocal{
+                font-family: 'Love Larry', fantasy;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Trabalhando com Fontes Externas</h1>
+        <p>Utilizando o <a href="fonts.google.com">Google Fonts</a>, podemos importar fontes, com códigos do tipo:
+        <code>@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');</code> e utilizar fontes externas de forma muito fácil. no nosso código CSS: <code>font-family: "Space Grotesk", sans-serif;</code> em qualquer elemento textual.
+        </p>
+
+        <h1 class="FonteLocal">Trabalhando com Fontes Locais</h1>
+        <p class="FonteLocal">Utilizando fontes locais, podemos incluir arquivos de fonte diretamente na nossa pasta de recursos:
+            <pre><code class="FonteLocal">
+            @font-face{
+            font-family: 'Love Larry';
+            src: url('love larry ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            }
+            </code></pre>
+        </p>
+
+        <p>Você pode também buscar/identificar fontes e cores utilizadas em um site com a extensão <a href="https://chromewebstore.google.com/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh" target="_blank">Fonts Ninja</a> ou então o <a href="https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp" target="_blank">ColorZilla</a> que é uma alternative boa também.</p>
+    </body>
+</html>
