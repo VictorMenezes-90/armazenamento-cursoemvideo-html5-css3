@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grouping Tags</title>
+        <style>
+
+            body{
+                margin: 0;
+                padding: 0;
+            }
+        
+
+            #secao01{
+                height: auto;
+
+                padding: 0px 15px;
+                margin: 5px 10px;
+
+                background-image: linear-gradient(125deg, rgb(215, 215, 255), rgb(255, 255, 255));
+                color: rgb(0,0,0);
+
+                border: 1px solid black;
+                border-radius: 15px;
+
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: justify;
+            }
+
+            #secao01>article{
+                padding: 5px 15px;
+                margin: 5px;
+
+                background-color: rgb(0,0,0,0.1);
+                color: rgb(0,0,0);
+
+                border-radius: 15px;
+            }
+
+            #secao01>article>h1{
+                margin:0 auto;
+                padding:0px 20px;
+
+                width: max-content;
+                background-color: rgb(0,0,0,1);
+                color: white;
+                border-radius: 30px;
+                align-self: center;
+
+                font-weight: 700;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <h1 id="titulo">Testando Grouping Tags</h1>
+            <nav id="menu">
+                <a href="https://google.com" target="_blank">Link001</a>
+                <a href="https://google.com" target="_blank">Link002</a>
+                <a href="https://google.com" target="_blank">Link003</a>
+                <a href="https://google.com" target="_blank">Link004</a>
+                <a href="https://google.com" target="_blank">Link005</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="secao01">
+                <article id="artigo01">
+                    <h1>Lorem Impsum Dolor</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi hic repudiandae debitis explicabo, fugiat odit voluptatibus quod doloribus fuga tenetur, voluptas totam, omnis unde nemo voluptates itaque fugit adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum totam, sed vero, earum tenetur dicta recusandae debitis reiciendis hic quae corrupti similique aut iste impedit tempore ut, unde quod.</p>
+                </article>
+                <article id="artigo02">
+                    <h1>Lorem Impsum Dolor</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi hic repudiandae debitis explicabo, fugiat odit voluptatibus quod doloribus fuga tenetur, voluptas totam, omnis unde nemo voluptates itaque fugit adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum totam, sed vero, earum tenetur dicta recusandae debitis reiciendis hic quae corrupti similique aut iste impedit tempore ut, unde quod.</p>
+                </article>
+                <article id="artigo03">
+                    <h1>Lorem Impsum Dolor</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi hic repudiandae debitis explicabo, fugiat odit voluptatibus quod doloribus fuga tenetur, voluptas totam, omnis unde nemo voluptates itaque fugit adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum totam, sed vero, earum tenetur dicta recusandae debitis reiciendis hic quae corrupti similique aut iste impedit tempore ut, unde quod.</p>
+                </article>
+                <aside id="aside01">
+                    <ul>
+                        <li>Ponto 01</li>
+                        <li>Ponto 02</li>
+                        <li>Ponto 03</li>
+                        <li>Ponto 04</li>
+                        <li>Ponto 05</li>
+                        <li>Ponto 06</li>
+                    </ul>
+                </aside>
+            </section>
+            <aside id="aside02"></aside>
+        </main>
+        <footer id="footer">
+            <h6>Desenvolvido por COTIL</h6>
+        </footer>
+    </body>
+</html>
